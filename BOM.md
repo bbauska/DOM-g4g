@@ -10,7 +10,6 @@ Here are the main parts of the Browser Object Model (BOM)
 
 ```
 <table>
-<table>
   <tr style="align:center">
     <th>Object</th>
     <th>Description</th>
@@ -80,6 +79,7 @@ location.href: Returns the full URL of the current page, including the protocol,
 location.protocol: Returns the protocol part of the URL (e.g., https: or http:).
 location.hostname: Returns the domain name or IP address of the URL (e.g., www.example.com).
 location.pathname: Returns the path part of the URL after the domain (e.g., /path/to/page).
+
 4. Screen Object
 The screen object provides information about the user’s screen, such as its resolution.
 
@@ -92,6 +92,7 @@ screen.width and screen.height give you the screen's dimensions.
 This can be useful for adapting your website's layout to different screen sizes.
 Screenshot-2025-01-21-152931
 Screen Object
+
 5. History Object
 The history object allows you to navigate through the browser's session history. It provides methods to move forward, backward, or to specific pages in the history stack.To see the working of history object you can run this code on the browser.
 
@@ -102,6 +103,7 @@ history.forward();
 
 history.back() goes back one page.
 history.forward() goes forward one page.
+
 6. Using window.resizeTo
 The window.resizeTo() method is used to resize the browser window to a specific width and height. This can be useful for controlling window dimensions in a web application.
 
