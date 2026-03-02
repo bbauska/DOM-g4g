@@ -207,7 +207,7 @@ building blocks used behind the scenes. Here’s what they mean in everyday term
 <h2>Commonly Used DOM Methods</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table>
-  <tr>
+  <tr style="align:center">
     <th>Methods</th>
     <th>Description</th>
   </tr>
