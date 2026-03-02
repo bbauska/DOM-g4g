@@ -5,7 +5,7 @@
 <a href="https://www.geeksforgeeks.org/websites-apps/web-page-a-complete-overview/">
 web page</a> that allows developers to access, modify, and control its content and structure using 
 <a href="https://www.geeksforgeeks.org/javascript/javascript-tutorial/">
-JavaScript. It powers most dynamic website interactions, enabling features like real-time updates, 
+JavaScript</a>. It powers most dynamic website interactions, enabling features like real-time updates, 
 form validation, and interactive user interfaces.</p>
 
 /* <DOM-image01of02.jpg> */
@@ -29,7 +29,7 @@ form validation, and interactive user interfaces.</p>
 <p>Imagine your webpage as a tree:</p>
 <ul>
   <li>The document is the root.</li>
-  <li>HTML tags like <html>, <head>, and <body> are branches.</li>
+  <li>HTML tags like &lt;html&gt;, &lt;head&gt;, and &lt;body&gt; are branches.</li>
   <li>Attributes, text, and other elements are the leaves.</li>
 </ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -60,10 +60,10 @@ form validation, and interactive user interfaces.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>The DOM is seperated into 3 parts:</p>
 <ol type="a">
-  <li>Core DOM: It is standard model for all document types(All DOM implementations must support 
+  <li>Core DOM: It is standard model for all document types (All DOM implementations must support 
       the interfaces listed as "fundamental" in the code specifications).</li>
-  <li>XML DOM: It is standard model for XML Documents( as the name suggests, all XML elements can be 
-      accessed through the XML DOM .)</li>
+  <li>XML DOM: It is standard model for XML Documents (as the name suggests, all XML elements can be 
+      accessed through the XML DOM.)</li>
   <li>HTML DOM: It is standard model for HTML documents (The HTML DOM is a standard for how to get, 
       change, add, or delete HTML elements.)</li>
 </ol>
@@ -84,7 +84,7 @@ form validation, and interactive user interfaces.</p>
 <p>The Document interface represents a web page loaded in the browser and acts as the main entry 
 point to its content. It allows developers to access and manipulate the page through the DOM tree.</p>
 <ul>
-  <li>The DOM tree consists of nodes like <body>, <table>, and other HTML elements.</li>
+  <li>The DOM tree consists of nodes like &lt;body&gt;, &lt;table&gt;, and other HTML elements.</li>
   <li>The Document interface provides global access to page information such as the URL.</li>
   <li>It enables creating, modifying, and managing elements within the web page.</li>
 </ul>
@@ -147,8 +147,8 @@ more specific:</p>
     elements, text, or comments.</li>
   <li>Document is a specialized type of Node that acts as the entry point to the entire DOM tree 
     (i.e., the web page).</li>
-  <li>HTMLElement extends Node and represents any HTML element (like <div>, <p>, etc.).</li>
-  <li>HTMLTableElement is a more specific type of HTMLElement tailored for <table> elements, 
+  <li>HTMLElement extends Node and represents any HTML element (like &lt;div&gt;, &lt;p&gt;, etc.).</li>
+  <li>HTMLTableElement is a more specific type of HTMLElement tailored for &lt;table&gt; elements, 
     giving it extra table-related methods like insertRow().</li>
 </ul>
 
@@ -177,6 +177,7 @@ const paragraphs = document.getElementsByTagName("p");
   <li>CSS selectors: var x = document.querySelectorAll(“p.intro”);</li>
   <li>HTML elements by HTML object collections:</li>
 </ul>
+<br>
 
 ```
 document.anchors.length;
@@ -283,7 +284,9 @@ building blocks used behind the scenes. Here’s what they mean in everyday term
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Understanding HTML Table Structure through DOM</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>This image visually represents how <table> contains <tr> (rows), which contain <td> (cells), and how each cell can hold content like "Car", "Scooter", etc., making it a clear example of HTML DOM structure for tables.</p>
+<p>This image visually represents how &lt;table&gt; contains &lt;tr&gt; (rows), which contain 
+&lt;td&gt; (cells), and how each cell can hold content like "Car", "Scooter", etc., making it a 
+clear example of HTML DOM structure for tables.</p>
 
 /* <DOM-image05.jpg> 8?
 
