@@ -8,38 +8,68 @@ using. In short, BOM helps JavaScript work with the browser to make web pages mo
 Browser Object Model Types
 Here are the main parts of the Browser Object Model (BOM)
 
-Object	Description
-window	Represents the browser window, controlling aspects like size and location, and serves as the global object.
-navigator	Provides details about the user's browser and operating system.
-location	Manages the current URL, allowing for retrieval and modification of the web address.
-screen	Offers information about the user's screen, such as its width and height.
-history	Provides access to the browser's session history, enabling navigation through the user's browsing history.
-Let's see each part of the Browser Object Model in more detail.
+```
+<table>
+<table>
+  <tr style="align:center">
+    <th>Object</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>window</td>
+    <td>Represents the browser window, controlling aspects like size and location, and serves as 
+  </tr>
+  <tr>
+    <td>navigator</td>
+    <td>Provides details about the user's browser and operating system.</td>
+  </tr>
+  <tr>
+    <td>location</td>
+    <td>Manages the current URL, allowing for retrieval and modification of the web address.</td>
+  <tr>
+    <td>screen</td>
+	<td>Offers information about the user's screen, such as its width and height.</td>
+  </tr>
+  <tr>
+    <td>history</td>
+	<td>Provides access to the browser's session history, enabling navigation through the user's 
+	  browsing history.</td>
+  </tr>
+</table>
+```
+
+<p>Let's see each part of the Browser Object Model in more detail.</p>
 
 1. Window Object
 The window object is the main object in the BOM, representing the browser window or tab itself. It's the top-level object, and everything else in the browser is contained within it.
 
-
+```
 window.alert('Hello, World!');
 console.log(window.innerWidth); 
+```
+
 The window object provides methods like alert(), confirm(), and prompt().
 It also gives you access to other important objects, such as document, navigator, screen, location, and history.
 
 2. Navigator Object
 The navigator object provides information about the browser and the user's environment. It is often used to detect the browser type or features.
 
-
+```
 console.log(navigator.userAgent); 
 console.log(navigator.language); 
+```
+
 navigator.userAgent can be used to identify the browser and its version, but it's not always reliable.
 navigator.language tells you the user's preferred language.
 
 3. Location Object
 The location object allows you to interact with the URL of the current document. It can be used to retrieve or manipulate parts of the URL and navigate to different pages.
 
-
+```
 console.log(location.href); 
 location.href = 'https://www.google.com/'
+```
+
 location.href gives you the full URL.
 You can change location.href to load a different page.
 Screenshot-2025-01-21-152426
@@ -53,9 +83,11 @@ location.pathname: Returns the path part of the URL after the domain (e.g., /pat
 4. Screen Object
 The screen object provides information about the user’s screen, such as its resolution.
 
-
+```
 console.log(screen.width);
 console.log(screen.height); 
+```
+
 screen.width and screen.height give you the screen's dimensions.
 This can be useful for adapting your website's layout to different screen sizes.
 Screenshot-2025-01-21-152931
@@ -63,17 +95,21 @@ Screen Object
 5. History Object
 The history object allows you to navigate through the browser's session history. It provides methods to move forward, backward, or to specific pages in the history stack.To see the working of history object you can run this code on the browser.
 
-
+```
 history.back(); 
 history.forward(); 
+```
+
 history.back() goes back one page.
 history.forward() goes forward one page.
 6. Using window.resizeTo
 The window.resizeTo() method is used to resize the browser window to a specific width and height. This can be useful for controlling window dimensions in a web application.
 
-
+```
 let newWindow = window.open("https://www.example.com/", "NewWindow", "width=500,height=500");
 newWindow.resizeTo(300, 300);
+```
+
 Output
 
 window.open("https://www.example.com/", "NewWindow", "width=500,height=500") opens a new browser window with the URL https://www.example.com/ The window is named "NewWindow", and its size is set to 500px by 500px.
